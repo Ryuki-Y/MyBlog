@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unityの基本</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0F7FA;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #0288D1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Unityの基本</h1>
+        <p>Unity では、すべてのオブジェクトは「ゲームオブジェクト」として扱われます。</p>
+        <p>例えば、Cube（立方体）を作ると、それは「ゲームオブジェクト」になります。</p>
+
+        <h3>ゲームオブジェクトの操作</h3>
+        <p>スクリプトで移動させるには、以下のように記述します。</p>
+
+        <pre>
+            <code>
+using UnityEngine;
+
+public class MoveObject : MonoBehaviour
+{
+    void Update()
+    {
+        transform.position += new Vector3(0.1f, 0, 0);
+    }
+}
+            </code>
+        </pre>
+
+        <a href="index.html">⬅️ ホームに戻る</a>
+    </div>
+
+</body>
+
+</html>
